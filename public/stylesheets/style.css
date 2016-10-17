@@ -1,0 +1,76 @@
+/*body {*/
+  /*!*padding: 50px;*!*/
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  /*margin: 5px;*/
+/*}*/
+
+/* NForce-IT - NavBar Style */
+.nf-navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+/* NForce-IT - Header Style */
+.nf-header-style {
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+/* NForce-IT - Breadcrumb Style */
+.nf-breadcrumb {
+  padding-top: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+/* NForce-IT - Container Content Style */
+.nf-container-content {
+  padding-top: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+/* NForce-IT - Content Container Style */
+.nf-content-container {
+  padding-top: 50px;
+  min-width: 320px;
+  max-width: 580px;
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+}
+
+.right {
+  text-align: right;
+  float: right;
+}
+
+.justify {
+  text-align: justify;
+  float: right;
+}
+
+.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.loader {
+  padding: 50px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*
+Copyright 2016 NForce IT - A.R.Winters . All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://nforce-it.nl/license
+*/

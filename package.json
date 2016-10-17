@@ -54,6 +54,7 @@
     "gulp-sourcemaps": "^2.1.1",
     "gulp-typescript": "^3.0.2",
     "gulp-uglify": "^2.0.0",
-    "typings": "^1.4.0"
+    "typings": "^1.4.0",
+    "del": "^2.2.0"
   }
 }
