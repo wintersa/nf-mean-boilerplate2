@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ROUTER_PROVIDERS } from "@angular/router";
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
-/*import { provide } from "@angular/core"; */
-/*import { HTTP_PROVIDERS } from "@angular/http";*/
+import { Http } from "@angular/http";
 
 import { AppComponent } from "./app.component";
 import { AuthService } from "./auth/auth.service";
@@ -13,7 +12,9 @@ import { ErrorService } from "./errors/error.service";
 @NgModule({
     declarations: [AppComponent],
     imports:[BrowserModule, ROUTER_PROVIDERS],
-    providers: [AuthService, ErrorService, LocationStrategy, HashLocationStrategy],
+    providers: [AuthService, ErrorService, Http,
+        { provide: LocationStrategy, useClass: HashLocationStrategy}
+    ],
     bootstrap: [AppComponent]
 })
 
