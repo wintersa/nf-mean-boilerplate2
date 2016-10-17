@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>NForce-IT MEAN Boilerplate v1.0</title>
+
+    <!-- 1. Custom, Bootstrap, Font-Awesome and PrimeNG stylesheets -->
+    <!-- Bootstrap4 is in alpha status, and there is no CDN yet -->
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css'/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/vendor/primeui/themes/omega/theme.css"/>
+    <link rel="stylesheet" type="text/css" href="js/vendor/primeui/primeui-ng-all.min.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="js/vendor/ng2-toastr/bundles/ng2-toastr.min.css"/>-->
+
+
+    <!-- 2. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="js/vendor/es6-shim/es6-shim.min.js"></script>
+
+    <script src="js/vendor/zone.js/dist/zone.js"></script>
+    <script src="js/vendor/reflect-metadata/Reflect.js"></script>
+    <script src="js/vendor/systemjs/dist/system.src.js"></script>
+
+    <!-- 3. Load Bootstrap4 scripts [NOT YET AVAILABLE!] -->
+    <!-- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--<script src="js/vendor/ng2-toastr/bundles/ng2-toastr.min.js"></script>-->
+
+    <!-- 4. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+<nf-app>
+    <div>
+        <div class="nf-content-container">
+            <h4><b>Please wait, while the application is getting ready for you...</b></h4>
+        </div>
+        <div class="loader"> </div>
+    </div>
+    <br/>
+</nf-app>
+
+<script>
+    System.import('app').catch(function(err){ console.error(err);  });
+</script>
+</body>
+</html>
+
+
+<!--
+Copyright 2016 NForce IT - A.R.Winters . All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://nforce-it.nl/license
+-->
